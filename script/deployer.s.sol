@@ -14,7 +14,9 @@ contract MyTokenScript is Script {
 
         uint256 deployerPrivateKey = vm.envUint("PRIVATE_KEY");
         vm.startBroadcast(deployerPrivateKey);
+
         // deploy your contracts here
+        
         // idoSale = new TokenIdoSale(
         //     address(0x0), // TOKEN_CONTRACT
         //     address(0x0), // PROJECT_OWNER
