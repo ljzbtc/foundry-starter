@@ -1,7 +1,7 @@
 
-## Order of Layout[](https://docs.soliditylang.org/en/latest/style-guide.html#order-of-layout "Permalink to this heading")
+// Solidity Style Guide - Order of Layout
 
-Contract elements should be laid out in the following order:
+// File Layout:
 
 1. Pragma statements
 2. Import statements
@@ -11,7 +11,7 @@ Contract elements should be laid out in the following order:
 6. Libraries
 7. Contracts
 
-Inside each contract, library or interface, use the following order:
+// Contract/Library/Interface Internal Layout:
 
 1. Type declarations
 2. State variables
@@ -20,19 +20,15 @@ Inside each contract, library or interface, use the following order:
 5. Modifiers
 6. Functions
 
+// Function Order:
 
-Order of FunctionsFunctions should be grouped according to their visibility and ordered:
+1. Constructor
+2. Receive function (if exists)
+3. Fallback function (if exists)
+4. External functions
+5. Public functions
+6. Internal functions
+7. Private functions
 
-constructor
-
-receive function (if exists)
-
-fallback function (if exists)
-
-external
-
-public
-
-internal
-
-private
+// Error Naming Convention:
+contractname_errorname
